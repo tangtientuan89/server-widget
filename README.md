@@ -1,4 +1,4 @@
-# api
+# Sails api template
 
 a [Sails v1](https://sailsjs.com) application
 
@@ -14,13 +14,12 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
-This app was originally generated on Sat Sep 28 2019 18:00:12 GMT+0700 (Indochina Time) using Sails v1.1.0.
-
-<!-- Internally, Sails used [`sails-generate@1.16.8`](https://github.com/balderdashy/sails-generate/tree/v1.16.8/lib/core-generators/new). -->
-
-
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
++ [Use MongoDb database](https://sailsjs.com/documentation/tutorials/using-mongo-db)
++ [Automatic routing](https://sailsjs.com/documentation/concepts/actions-and-controllers/routing-to-actions)
++ [Automatic logging request](https://www.npmjs.com/package/sails-hook-requestlogger)
++ [Automatic reload server when code change](https://www.npmjs.com/package/sails-hook-autoreload)
++ [Modify res.ok() and res.err()]()
++ [Disable socket]()
++ [Import global lodash](https://lodash.com/)
++ [Import global async.js](https://caolan.github.io/async/v3/docs.html)
++ [Set cors allow all origin](https://sailsjs.com/documentation/concepts/security/cors)
