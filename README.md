@@ -14,6 +14,7 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
++ [Service indexes MongoDB]()
 + [No frontend](https://sailsjs.com/documentation/reference/command-line-interface/sails-new)
 + [Use MongoDb database](https://sailsjs.com/documentation/tutorials/using-mongo-db)
 + [Automatic routing](https://sailsjs.com/documentation/concepts/actions-and-controllers/routing-to-actions)
