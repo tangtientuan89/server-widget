@@ -14,6 +14,7 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
++ [Prefix api](https://sailsjs.com/documentation/reference/configuration/sails-config-blueprints)
 + [Serve static at /public/*]()
 + [Service indexes MongoDB](https://docs.mongodb.com/manual/reference/method/db.collection.ensureIndex/)
 + [Service hash salt password](https://www.geeksforgeeks.org/node-js-password-hashing-crypto-module/)
