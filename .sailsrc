@@ -9,5 +9,8 @@
   "hooks": {
     "grunt": false,
     "sockets" : false
+  },
+  "paths": {
+    "public": "public"
   }
 }
