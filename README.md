@@ -14,7 +14,9 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
-+ [Service indexes MongoDB]()
++ [Serve static at /public/*]()
++ [Service indexes MongoDB](https://docs.mongodb.com/manual/reference/method/db.collection.ensureIndex/)
++ [Service hash salt password](https://www.geeksforgeeks.org/node-js-password-hashing-crypto-module/)
 + [No frontend](https://sailsjs.com/documentation/reference/command-line-interface/sails-new)
 + [Use MongoDb database](https://sailsjs.com/documentation/tutorials/using-mongo-db)
 + [Automatic routing](https://sailsjs.com/documentation/concepts/actions-and-controllers/routing-to-actions)
