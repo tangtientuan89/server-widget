@@ -8,7 +8,8 @@
   },
   "hooks": {
     "grunt": false,
-    "sockets" : false
+    "sockets" : false,
+    "session": false
   },
   "paths": {
     "public": "public"
