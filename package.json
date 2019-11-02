@@ -14,7 +14,9 @@
     "sails-hook-orm": "^2.1.1",
     "sails-hook-requestlogger": "^1.0.0",
     "sails-hook-sockets": "^1.5.5",
-    "sails-mongo": "^1.0.1"
+    "sails-mongo": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0"
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3"
