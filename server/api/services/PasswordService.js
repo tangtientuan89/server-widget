@@ -1,31 +1,16 @@
-const crypto = require('crypto')
+const bcrypt = require('bcryptjs')
 
-module.exports = passwordService = {
-    genSalt: (next) => {
-        crypto.randomBytes(
-            16,
-            (e, r) => (e) ? next(e) : next(null, r.toString('hex'))
-        )
+module.exports = {
+    'hash_password': (password, round = 6) => {
+        const salt = bcrypt.genSaltSync(round)
+        const hash = bcrypt.hashSync(password, salt)
+        return hash
     },
-    genHash: (password, salt, next) => {
-        try {
-            crypto.pbkdf2(
-                password,
-                salt,
-                1000,
-                64,
-                'sha512',
-                (e, r) => (e) ? next(e) : next(null, r.toString('hex'))
-            )
-        } catch (e) {
-            next(e.message)
-        }
-    },
-    validate: (password, hash, salt, next) => {
-        passwordService.genHash(
-            password,
-            salt,
-            (e, r) => (e) ? next(e) : next(null ,hash === r)
-        )
+    /**
+     * true / false
+     */
+    'check_password': (password, hash) => {
+        const check = bcrypt.compareSync(password, hash)
+        return check
     }
 }
