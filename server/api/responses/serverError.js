@@ -1,6 +1,8 @@
-'use strict'
-module.exports = function sendErr(message = 'Server error, please contact to administrator') {
-    var res = this.res
-    res.status(500)
-    res.json({ error_message: message, code: 500 })
+module.exports = function (
+    error_message = 'Server error, please contact to administrator',
+    code = 500
+) {
+    let res = this.res
+    res.status(code)
+    res.json({ error_message, code })
 }
