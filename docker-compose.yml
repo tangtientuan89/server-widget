@@ -1,8 +1,8 @@
 version: "3.3"
 
 services:
-  sails-api-template:
-    container_name: sails-api-template
+  widget-server-api:
+    container_name: widget-server-api
     build: ./server/
     volumes:
       - ./server:/server
