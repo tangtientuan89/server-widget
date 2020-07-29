@@ -43,5 +43,5 @@ module.exports.blueprints = {
   * Prefix to all api                                                        *
   *                                                                          *
   ***************************************************************************/
-  // prefix: '/v1'
+  prefix: '/v1'
 };
