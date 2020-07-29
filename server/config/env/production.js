@@ -70,9 +70,9 @@ module.exports = {
       * https://sailsjs.com/config/datastores                                     *
       *                                                                           *
       ****************************************************************************/
-      ssl: true,
+      // ssl: true,
       adapter: 'sails-mongo',
-      host: 'localhost',
+      host: '127.0.0.1',
       port: 27017,
       // user: 'user',
       // password: 'password',
