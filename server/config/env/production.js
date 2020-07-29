@@ -76,7 +76,7 @@ module.exports = {
       port: 27017,
       // user: 'user',
       // password: 'password',
-      database: 'database'
+      database: 'widget-api'
     },
 
   },
