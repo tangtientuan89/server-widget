@@ -19,6 +19,7 @@ module.exports = {
                 QuickAnswer
                     .create({
                         fb_page_id: p.fb_page_id,
+                        title: p.title,
                         content: p.content
                     })
                     .fetch()

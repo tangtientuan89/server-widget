@@ -11,8 +11,11 @@ module.exports = {
         fb_page_id: {
             type: 'string'
         },
+        title: {
+            type: 'string'
+        },
         content: {
             type: 'string'
         }
-    },
-  };
+    }
+};
