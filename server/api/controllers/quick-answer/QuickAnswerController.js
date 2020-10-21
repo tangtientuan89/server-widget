@@ -54,7 +54,7 @@ module.exports = {
                             ...{
                                 or: [
                                     {
-                                        content: {
+                                        title: {
                                             contains: search
                                         }
                                     }
