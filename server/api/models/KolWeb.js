@@ -1,21 +1,24 @@
 /**
  * LogUser.js
  *
- * @description :: Lưu lại tất cả các câu trả lời nhanh của chatbox.
+ * @description :: Lưu lại tất cả thông tin người dùng.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
  */
 
 module.exports = {
 
     attributes: {
-        fb_page_id: {
+        name: {
             type: 'string'
         },
-        title: {
+        phone: {
             type: 'string'
         },
-        content: {
+        email: {
+            type: 'string'
+        },
+        note: {
             type: 'string'
         }
     }
-};
+};  
