@@ -48,32 +48,6 @@ module.exports = {
 
         async.waterfall([
             (next) => {
-                if (search) {
-                    WidgetSetting
-                        .find({
-                            ...p,
-                            ...{
-                                or: [
-                                    {
-                                        title: {
-                                            contains: search
-                                        }
-                                    }
-                                ]
-                            }
-                        })
-                        .skip(skip)
-                        .limit(limit)
-                        .sort(sort)
-                        .exec((e, r) => (e) ? next(e) : next(null, r))
-                    return
-                }
-                if (id) {
-                    WidgetSetting
-                        .findOne(id)
-                        .exec((e, r) => (e) ? next(e) : next(null, r))
-                    return
-                }
                 WidgetSetting
                     .find(p)
                     .skip(skip)
