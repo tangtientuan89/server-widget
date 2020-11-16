@@ -20,6 +20,7 @@ module.exports = {
                     .create({
                         fb_page_id: p.fb_page_id,
                         asid: p.asid,
+                        secret_key: p.secret_key,
                         setting_data: p.setting_data
                     })
                     .fetch()
