@@ -12,7 +12,8 @@ module.exports = {
     'create_setting': (req, res) => {
         let p = req.allParams()
         if (!p.fb_page_id) return res.err("Require fb_page_id");
-        if (!p.content) return res.err("Require content");
+        if (!p.asid) return res.err("Require asid");
+        if (!p.secret_key) return res.err("Require secret_key");
 
         async.waterfall([
             (next) => {
