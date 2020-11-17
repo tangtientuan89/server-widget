@@ -12,6 +12,9 @@ module.exports = {
         asid: {
             type: 'string'
         },
+        secret_key: {
+            type: 'string'
+        },
         setting_data: {
             type: 'json'
         }
