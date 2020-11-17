@@ -9,12 +9,25 @@ module.exports = {
     'ping': (req, res) => {
         res.ok('ping')
     },
-    'create_setting': (req, res) => {
+    'find_create_setting': (req, res) => {
         let p = req.allParams()
         if (!p.fb_page_id) return res.err("Require fb_page_id");
         if (!p.content) return res.err("Require content");
 
         async.waterfall([
+            (next) => {
+                WidgetSetting
+                .find({
+                    fb_page_id: p.fb_page_id,
+                    asid: p.asid,
+                    secret_key: p.secret_key,
+                })
+                .exec((e, r) => {
+                    if(e) return next(e)
+                    if(r) return res.ok(r)
+                    if(!r) next()
+                })
+            },
             (next) => {
                 WidgetSetting
                     .create({
